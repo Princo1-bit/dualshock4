@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/ps.css">
+</head>
+<body>
+    <header>
+        <div class="mens">
+            <div class="logo">
+                <img src="./Playstation_Img/logo.png" alt="">
+            </div>
+    
+            
+            <div class="hammen">
+                <img src="./Playstation_Img/menu.png" alt=""  class="menu-icon" id="am">
+            </div>
+        </div>
+        
+
+        <nav class="menus">
+            
+            <ul id="menuList">
+                <li><a href="#">Game Controllers</a></li>
+                <li><a href="#">VR Accessories</a></li>
+                <li><a href="#">Media Headphones</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="controller">
+            <img src="./Playstation_Img/controller.png" alt="">
+        </div>
+        <div class="box">
+            <div class="container">
+                <img src="./Playstation_Img/add.png" alt="">
+                <p>Add Cart</p>
+            </div>
+                
+        
+        </div>
+            
+    </main>
+
+    <section>
+        <div class="container">
+            <h1>PS4 V2 Dualschock 4</h1>
+            <h3>Wireless Controller For PlayStation 4</h3>
+            <p>(CommunicationConnect)</p>
+        </div>
+        
+        <div class="link">
+            <p>$23.50</p>
+            <button><p>Buy <span>Now</span></p> <img src="./Playstation_Img/arrow.png" alt=""></button>
+        </div>
+       
+    </section>
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="./Playstation_Img/fb.png" alt=""></a></li>
+                <li><a href="#"><img src="./Playstation_Img/tw.png" alt=""></a></li>
+                <li><a href="#"><img src="./Playstation_Img/ig.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+       var logo = document.querySelector('.menu-icon');
+       var menulist = document.querySelector('.menus');
+       var am = document.getElementById("am");
+
+       logo.addEventListener('click',function(){
+            menulist.classList.toggle('show');
+            am.classList.toggle("ro");
+       });
+
+       
+
+
+    </script>
+</body>
+</html>
